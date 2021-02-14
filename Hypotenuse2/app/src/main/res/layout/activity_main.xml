@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pythagorean Theorem : solve for hypotenuse"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/triangle"
+            android:layout_width="145dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/triangle" />
+
+        <TextView
+            android:id="@+id/valueC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C ?"
+            android:textSize="8pt"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/triangle"
+            />
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/lega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/leg_a"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="9pt"
+        android:textAlignment="center"
+        android:hint="leg a"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/legb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/leg_b"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="9pt"
+        android:textAlignment="center"
+        android:hint="leg b"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:cornerRadius="0dp"
+        android:text="SOLVE"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="พิมพ์นิภา อมรพิไลรัตน์ 621310434"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
