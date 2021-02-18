@@ -19,15 +19,17 @@ class MainActivity : AppCompatActivity() {
         val valueC = findViewById<TextView>(R.id.valueC)
 
         btnSolve.setOnClickListener() {
-            var a = lega.text.toString().toDouble()
-            var b = legb.text.toString().toDouble()
+            var a: Double = lega.text.toString().toDouble()
+            var aa:Double = a*1
+            var b: Double = legb.text.toString().toDouble()
+            var bb:Double = b*1
 
             var c:Double =  ((a*a) + (b*b))
             var sqc = Math.sqrt(c)
 
             var intent = Intent(this@MainActivity, SecondActivity::class.java)
-            intent.putExtra("a",lega.text.toString())
-            intent.putExtra("b",legb.text.toString())
+            intent.putExtra("a",aa.toString())
+            intent.putExtra("b",bb.toString())
             intent.putExtra("c",sqc.toString())
             startActivity(intent)
         }

@@ -25,13 +25,13 @@ class SecondActivity : AppCompatActivity() {
         val c = intent.getStringExtra("c")
         valueC.setText(c)
 
+
         val okBtn = findViewById<Button>(R.id.okBtn);
         okBtn.setOnClickListener {
             var intent = Intent()
             setResult(Activity.RESULT_OK,intent)
             finish()
         }
-
     }
 }
 
